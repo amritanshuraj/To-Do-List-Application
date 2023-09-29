@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDo List</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <div id="toDoListPage">
+    <h1>Your ToDo List</h1>
+    <div id="taskListContainer">
+      <ul id="taskList"></ul> 
+    </div>
+    <div id="taskInputContainer" class="colorfulButtons">
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button id="addTaskButton" onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="colorfulButtons">
+        <button class="default" onclick="changeBackgroundColor('rgba(255, 255, 255, 0.8)')">Default</button>
+        <button class="red" onclick="changeBackgroundColor('red')">Red</button>
+        <button class="blue" onclick="changeBackgroundColor('blue')">Blue</button>
+        <button class="green" onclick="changeBackgroundColor('green')">Green</button>
+        <button class="orange" onclick="changeBackgroundColor('orange')">Orange</button>
+    </div>   
+    
+
+    <footer>
+        <p id="copyright">Copyright © Amritanshu Raj</p>
+      </footer>
+ </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
